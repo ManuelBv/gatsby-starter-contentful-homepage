@@ -25,7 +25,13 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-transformer-sharp",
     "gatsby-plugin-vanilla-extract",
-    "gatsby-theme-contentful-blog",
+    {
+      resolve: "gatsby-theme-contentful-blog",
+      options: {
+        postPath: "src/templates/blog-post",
+        indexPath: "src/templates/blog-index",
+      },
+    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
